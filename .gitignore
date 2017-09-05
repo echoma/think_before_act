@@ -1,0 +1,6 @@
+*.log
+*.tgz
+node_modules/
+*.egg
+*.pyc
+__pycache__/
