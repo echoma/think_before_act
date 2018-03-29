@@ -9,11 +9,11 @@
 ### 数据表：family 家族
 
 属性：
-* 名称：金陵贾家、金陵贾家连宗、金陵王家、金陵王家连宗、金陵史家、金陵薛家、北静王等等
-* 发源地：金陵
-* 先居地：京城
+* name 名称：金陵贾家、金陵贾家连宗、金陵王家、金陵王家连宗、金陵史家、金陵薛家、北静王等等
+* cradle 发源地：金陵
+* residence 现居地：京城
 
-### 数据表：character 人物
+### 数据表：person 人物
 
 属性：
 * name 称呼：通常就是姓名，但也有特例，比如袭人，姓花，原名金花。小红，姓林，原名红玉。
@@ -26,10 +26,9 @@
 * family_name 姓
 * given_name 名
 * old_name 原名
-* old_family 原属家族
-* current_family 现属家族
-* employee 是否家族仆人
-* job 工作
+* `old_name_note` 原名注解
+* original_family 原属家族
+* family 现属家族
 * generation 在所有家族中拉横是第几代
 * nick_1 诨名1：凤辣子、呆霸王、二木头
 * `nick_note_1` 诨名1注解
@@ -52,16 +51,16 @@
 * `first_refer_chapter`首次提及回目：本人未出场，但先被别人提到了
 * `first_refer_note` 首次提及注解
 * `first_name_chapter` 首次称呼回目：人物的名字出现位置可能和首次出场不同，也可能和首次提及回目不同
-* `first_name_note`首次称呼注解
+* `first_name_note` 首次称呼注解
 * die_chapter 死亡回目
 * die_note 死亡注解
 * salary 俸银、月例
 
-### 数据表：character_job 人物的工作
+### 数据表：person_job 人物的工作
 
 属性：
 * family 家族
-* job 工作
+* job_description 工作描述
 * serve 侍奉对象
 * pay 月例
 * pay_note 月例注释
