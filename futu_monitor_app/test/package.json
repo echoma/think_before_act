@@ -1,0 +1,11 @@
+{
+  "name":"test",
+  "main":"http://monitor.server.com/",
+  "nodejs":true,
+  "node-remote":"*://*/*",
+  "inject_js_end":"inject.js",
+  "window":{
+	"width":900,
+	"height":800
+  }
+}
