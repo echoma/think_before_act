@@ -192,7 +192,7 @@ if [ $# -lt 2 ];then
     echo -e '  k8s.sh install all\t\t\t依次安装docker,cri,k8s'
     echo -e '  k8s.sh install [docker|cri|k8s]\t指定安装某个组件。除非你了解这里的依赖关系，否则不要这样做'
     echo -e '  k8s.sh install dashboard\t\t安装Dashboard（集群创建完后再安装）'
-    echo -e '  k8s.sh dashboard logontoken\t\t显示登录dashboard的token'
+    echo -e '  k8s.sh dashboard info\t\t显示Dashboard访问信息'
     echo -e '  k8s.sh kubectl [user name]\t\t使某用户可执行kubectl'
     echo -e '  k8s.sh cluster show\t\t展示集群信息'
     echo -e '  k8s.sh cluster create\t\t在主节点上创建集群'
@@ -217,8 +217,8 @@ if [ "$1"x == "install"x ]; then
         dashboard_install
     fi
 elif [ "$1"x == "dashboard"x ]; then
-    if [ "$2"x == "logontoken"x ]; then
-        dashboard_logon_token
+    if [ "$2"x == "info"x ]; then
+        dashboard_info
     fi
 elif [ "$1"x == "kubectl"x ]; then
     k8s_ctl4nonroot $2
